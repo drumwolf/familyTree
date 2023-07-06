@@ -12,7 +12,7 @@ interface CoupleDividerProps {
   genIndex: number
 }
 
-const dividerWidths = ['', '500px', '127px', '53px', '12px', '3px']
+const dividerWidths = ['', '500px', '127px', '74px', '12px', '3px']
 const dividerTop = ['', '52px', '52px', '70px', '63px']
 
 const CoupleDivider = ({ genIndex }: CoupleDividerProps) => (
