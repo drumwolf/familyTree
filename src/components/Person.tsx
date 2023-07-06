@@ -16,7 +16,7 @@ const nameHeights = [null, null, null, '45px', '37px']
 const Person = ({ data, genIndex }: PersonProps) => (
   <Stack
     sx={{
-      backgroundColor: 'white',
+      backgroundColor: `#${data?.color || 'FFF'}`,
       border: '1px solid #999',
       borderRadius: '5px',
       height: personHeights[genIndex],
@@ -41,7 +41,6 @@ const Person = ({ data, genIndex }: PersonProps) => (
       sx={{
         fontWeight: 'bold',
         fontSize: nameFontSize[genIndex],
-        fontStyle: 'italic',
         height: nameHeights[genIndex],
         lineHeight: nameLineHts[genIndex],
         padding: '2px 5px',
@@ -69,7 +68,8 @@ const Person = ({ data, genIndex }: PersonProps) => (
       component='p'
       sx={{
         fontSize: '11px',
-        paddingX: '10px'
+        fontStyle: 'italic',
+        paddingX: '10px',
       }}
     >
       {data?.notes}
