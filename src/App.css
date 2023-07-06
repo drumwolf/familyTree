@@ -4,15 +4,6 @@
   text-align: center;
 }
 
-.family-tree {
-  background-color: #B7B7B7;
-  border-radius: 50px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 15px 25px;
-  width: 1600px;
-}
-
 .generation {
   display: flex;
   padding: 5px 0;

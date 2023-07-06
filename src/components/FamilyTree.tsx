@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import Box from '@mui/material/Box'
 import '../App.css'
 import Generation from './Generation'
 import type { PersonType } from '../types'
@@ -18,7 +19,17 @@ const setGenerationKey = (generation: GenerationType) => {
 }
 
 const FamilyTreeContainer = ({ children }: FamilyTreeContainerProps) => (
-  <div className="family-tree">{children}</div>
+  <Box sx={{
+    width: 1600,
+    height: 900,
+    backgroundColor: '#B7B7B7',
+    borderRadius: 10,
+    boxSizing: 'border-box',
+    paddingTop: 5,
+    paddingX: 2,
+  }}>
+    {children}
+  </Box>
 )
 
 const FamilyTree = ({ data }: FamilyTreeProps) => (
