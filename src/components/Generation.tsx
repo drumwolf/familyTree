@@ -1,5 +1,5 @@
-import Couple from './Couple'
 import Box from '@mui/material/Box'
+import Couple from './Couple'
 import type { PersonType } from '../types'
 
 interface GenerationProps {
@@ -10,7 +10,9 @@ type CoupleType = PersonType[]
 
 const setCoupleKey = (couple: CoupleType, genIndex: number) => {
   const { name, born } = couple[0]
-  return `couple-gen${genIndex}-${name?.toLowerCase().split(' ').join('-')}-${born || 0}`
+  const nameString = name?.toLowerCase().split(' ').join('-') || ''
+  const bornString = born || 0
+  return `couple-gen${genIndex}-${nameString}-${bornString}`
 }
 
 const Generation = ({ data, index }: GenerationProps) => (

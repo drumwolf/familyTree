@@ -17,7 +17,11 @@ function App() {
   const [familyTree, setFamilyTree] = useState<PersonType[][][]>([])
 
   useEffect(() => {
-    fetchUrl().then((data) => setFamilyTree(data))
+    const fetchData = async () => {
+      const data = await fetchUrl()
+      setFamilyTree(data)
+    }
+    fetchData().catch(console.error)
   }, [])
 
   return (

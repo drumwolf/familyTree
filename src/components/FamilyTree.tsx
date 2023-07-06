@@ -1,5 +1,5 @@
-import { ReactNode } from 'react'
 import Box from '@mui/material/Box'
+import { ReactNode } from 'react'
 import '../App.css'
 import Generation from './Generation'
 import type { PersonType } from '../types'
