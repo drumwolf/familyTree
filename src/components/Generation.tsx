@@ -1,4 +1,5 @@
 import Couple from './Couple'
+import Box from '@mui/material/Box'
 import type { PersonType } from '../types'
 
 interface GenerationProps {
@@ -13,13 +14,20 @@ const setCoupleKey = (couple: CoupleType, genIndex: number) => {
 }
 
 const Generation = ({ data, index }: GenerationProps) => (
-  <div className="generation">
+  <Box
+    className='generation'
+    sx={{
+      display: 'flex',
+      justifyContent: 'space-around',
+      paddingY: '5px',
+    }}
+  >
   {
     data?.map((couple) =>
       <Couple data={couple} genIndex={index} key={setCoupleKey(couple, index)} />
     )
   }
-  </div>
+  </Box>
 )
 
 export default Generation

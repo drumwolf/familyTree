@@ -4,12 +4,6 @@
   text-align: center;
 }
 
-.generation {
-  display: flex;
-  padding: 5px 0;
-  justify-content: space-around;
-}
-
 .couple {
   align-items: center;
   display: flex;
