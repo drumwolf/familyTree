@@ -4,30 +4,6 @@
   text-align: center;
 }
 
-.divider {
-  background-color: #000;
-  position: relative;
-  height: 3px;
-}
-.divider-1 {
-  top: -2px;
-  width: 500px;
-}
-.divider-2 {
-  top: -2px;
-  width: 127px;
-}
-.divider-3 {
-  position: relative;
-  top: -22px;
-  width: 53px;
-}
-.divider-4 {
-  position: relative;
-  top: -36px;
-  width: 12px;
-}
-
 .ancestor {
   background-color: white;
   border: 1px solid #B9B9B9;

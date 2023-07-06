@@ -1,4 +1,5 @@
 import Box from '@mui/material/Box'
+import Divider from '@mui/material/Divider'
 import Person from './Person'
 import type { PersonType } from '../types'
 
@@ -11,20 +12,21 @@ interface CoupleDividerProps {
   genIndex: number
 }
 
-const bottomRowBorder = {
-  content: '""',
-  backgroundColor: 'black',
-  bottom: '-2px',
-  borderRadius: '2px',
-  transform: 'translateX(50%)',
-  right: '50%',
-  position: 'absolute',
-  width: '178px',
-  height: '2px',
-}
+const dividerWidths = ['', '500px', '127px', '53px', '12px', '3px']
+const dividerTop = ['', '52px', '52px', '70px', '63px']
 
-const CoupleDivider = ({ genIndex }: CoupleDividerProps) =>
-  <div className={`divider divider-${genIndex}`} />
+const CoupleDivider = ({ genIndex }: CoupleDividerProps) => (
+  <Divider
+    flexItem
+    sx={{
+      backgroundColor: 'black',
+      height: '2px',
+      top: dividerTop[genIndex],
+      width: dividerWidths[genIndex],
+      position: 'relative',
+    }}
+  />
+)
 
 const Couple = ({ data, genIndex }: CoupleProps) => {
   if (data.length === 1) {
@@ -39,7 +41,17 @@ const Couple = ({ data, genIndex }: CoupleProps) => {
         display: 'flex',
         marginTop: '10px',
         position: 'relative',
-        '&::before': genIndex === 4 ? bottomRowBorder : undefined
+        '&::before': genIndex === 4 ? {
+          content: '""',
+          backgroundColor: 'black',
+          bottom: '-2px',
+          borderRadius: '2px',
+          transform: 'translateX(50%)',
+          right: '50%',
+          position: 'absolute',
+          width: '178px',
+          height: '2px',
+        } : undefined
       }}
     >
       <Person data={data[0]} genIndex={genIndex} />
