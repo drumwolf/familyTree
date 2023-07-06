@@ -15,7 +15,6 @@ const setCoupleKey = (couple: CoupleType, genIndex: number) => {
 
 const Generation = ({ data, index }: GenerationProps) => (
   <Box
-    className='generation'
     sx={{
       display: 'flex',
       justifyContent: 'space-around',

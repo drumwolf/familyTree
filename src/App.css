@@ -4,24 +4,6 @@
   text-align: center;
 }
 
-.couple {
-  align-items: center;
-  display: flex;
-  margin-top: 10px;
-  position: relative;
-}
-.generation:last-child .couple:after {
-  content: '';
-  position: absolute;
-  border-radius: 2px;
-  bottom: 0;
-  transform: translateX(50%);
-  right: 50%;
-  background-color: black;
-  width: 180px;
-  height: 2px;
-}
-
 .divider {
   background-color: #000;
   position: relative;
