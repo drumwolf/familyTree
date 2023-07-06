@@ -1,42 +1,144 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.family-tree {
+  background-color: #B7B7B7;
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 15px 25px;
+  width: 1600px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.generation {
+  display: flex;
+  padding: 5px 0;
+  justify-content: space-around;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.couple {
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  position: relative;
+}
+.generation:last-child .couple:after {
+  content: '';
+  position: absolute;
+  border-radius: 2px;
+  bottom: 0;
+  transform: translateX(50%);
+  right: 50%;
+  background-color: black;
+  width: 180px;
+  height: 2px;
 }
 
-.card {
-  padding: 2em;
+.divider {
+  background-color: #000;
+  position: relative;
+  height: 3px;
+}
+.divider-1 {
+  top: -2px;
+  width: 500px;
+}
+.divider-2 {
+  top: -2px;
+  width: 127px;
+}
+.divider-3 {
+  position: relative;
+  top: -22px;
+  width: 53px;
+}
+.divider-4 {
+  position: relative;
+  top: -36px;
+  width: 12px;
 }
 
-.read-the-docs {
-  color: #888;
+.ancestor {
+  background-color: white;
+  border: 1px solid #B9B9B9;
+  border-radius: 5px;
+  padding: 2px 10px;
+  position: relative;
+  height: 110px;
+  width: 240px;
+}
+.ancestor:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  right: 50%;
+  background-color: black;
+  width: 2px;
+  height: 75px;
+}
+.ancestor-md:after {
+  height: 92px;
+}
+.ancestor-sm {
+  width: 120px;
+  height: 180px;
+}
+.ancestor-sm:after {
+  height: 84px;
+}
+.ancestor-xs {
+  width: 64px;
+  height: 190px;
+}
+.ancestor-xs:after {
+  display: none;
+}
+
+.ancestor .name {
+  font-weight: bold;
+  font-size: 20px;
+}
+.ancestor-sm .name {
+  font-size: 15px;
+  line-height: 18px;
+  padding: 5px 5px 0;
+}
+.ancestor-xs .name {
+  font-size: 11px;
+  height: 35px;
+}
+
+.ancestor .year {
+  font-size: 13px;
+  border-bottom: solid 1px #B9B9B9;
+  padding-bottom: 4px;
+}
+.ancestor-sm .year {
+  padding-top: 3px;
+}
+
+.ancestor .notes {
+  align-items: center;
+  display: flex;
+  font-size: 11px;
+  font-style: italic;
+  height: 50px;
+  width: 100%;
+}
+.ancestor-sm .notes {
+  align-items: baseline;
+  margin-top: 12px;
+}
+.ancestor-xs .notes {
+  align-items: baseline;
+  margin-top: 5px;
+}
+
+.ancestor .notes p {
+  margin: 0;
+  width: 100%;
 }
