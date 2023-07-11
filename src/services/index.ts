@@ -1,6 +1,6 @@
-const gsxID = '1y5bYzGLj8QVeGFo9ETnKQVEHGBxAM9rwCDOCX7CokHc'
-const key = 'AIzaSyAb8lPxueqZdft_oQRDxmgTQKBjzrezFE8'
-const sheet = 'laura'
+const gsxID = import.meta.env.VITE_GSX_ID as string
+const key = import.meta.env.VITE_GSX_KEY as string
+const sheet = import.meta.env.VITE_GSX_SHEET as string
 const url = `https://sheets.googleapis.com/v4/spreadsheets/${gsxID}/values/${sheet}?key=${key}`
 
 interface Ancestor {
