@@ -11,6 +11,19 @@ You'll need the following:
 
 ## Part 1: Google Sheets document
 
+This web app will require a Google Sheets spreadsheet document and knowledge of the Google Sheets API.  If you are not already familiar with this API,
+it is recommended that [https://developers.google.com/sheets/api/guides/concepts](you read here first).  
+
+Here are the basic high-level steps, although you will find more detailed documentation on the links:
+
+- Create the document, with the following labels in the first row:
+  - A1: `name`
+  - B1: `born`
+  - C1: `notes`
+  - D1: `color` (value should be hex color, i.e. `#FFFFFF`)
+    
+- dddd
+
 ## Part 2: Download and run local web app repository
 
 In the project directory, you can run: `yarn dev`
