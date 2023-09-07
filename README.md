@@ -22,13 +22,19 @@ Here are the basic high-level steps, although you will find more detailed docume
   - C1: `notes`
   - D1: `color` (value should be hex color, i.e. `#FFFFFF`)
     
-- dddd
+- Click the "Share" button in the top right corner to change the "General Access" setting to make it viewable to "Anyone with the link"
 
-## Part 2: Download and run local web app repository
+## Part 2: Download local web app repository
 
-In the project directory, you can run: `yarn dev`
+- In the terminal, type: `git clone git@github.com:drumwolf/familytree.git`
+- Install all packages:  `yarn install`
 
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+## Part 3: Set up environmental variables
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- In the root directory, create a new file called `.env`
+
+## Part 4: Run web app on local workstation
+
+- In the project directory, you can run: `yarn dev`
+- Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+- The page will reload if you make edits.  You will also see any lint errors in the console.
