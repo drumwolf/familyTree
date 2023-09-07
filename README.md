@@ -33,6 +33,12 @@ Here are the basic high-level steps, although you will find more detailed docume
 
 - In the root directory, create a new file called `.env`
 
+```
+VITE_GSX_ID=[id]
+VITE_GSX_KEY=[key]
+VITE_GSX_SHEET=[name of sheet in the Google Sheets document, defaults to 'Sheet1']
+```
+
 ## Part 4: Run web app on local workstation
 
 - In the project directory, you can run: `yarn dev`
