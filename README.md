@@ -9,20 +9,26 @@ You'll need the following:
 - A copy of this repository, cloned to your local hard drive and accessible in your terminal
 - Your own `.env` configuration file, placed in the root of the repository directory, which will point the web app to your Google Sheets document
 
-## Part 1: Google Sheets document
+### Part 1: Google Sheets document
 
 This web app will require a Google Sheets spreadsheet document and knowledge of the Google Sheets API.  If you are not already familiar with this API,
-it is recommended that [https://developers.google.com/sheets/api/guides/concepts](you read here first).  
+it is recommended that [you read here first](https://developers.google.com/sheets/api/guides/concepts).  
 
 Here are the basic high-level steps, although you will find more detailed documentation on the links:
 
-- Create the document, with the following labels in the first row:
+#### Create the document
+
+- The first row should have the following labels:
   - A1: `name`
   - B1: `born`
   - C1: `notes`
   - D1: `color` (value should be hex color, i.e. `#FFFFFF`)
     
+### Share the document
+
 - Click the "Share" button in the top right corner to change the "General Access" setting to make it viewable to "Anyone with the link"
+
+### Create a Google API Key for Google Sheets
 
 - Create a Google API Key for Google Sheets
 
