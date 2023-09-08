@@ -24,12 +24,15 @@ Here are the basic high-level steps, although you will find more detailed docume
     
 - Click the "Share" button in the top right corner to change the "General Access" setting to make it viewable to "Anyone with the link"
 
+- Create a Google API Key for Google Sheets
+
+
+
 ## Part 2: Download local web app repository
 
 - In the terminal, type: `git clone git@github.com:drumwolf/familytree.git`
-- Install all packages:  `yarn install`
 
-## Part 3: Set up environmental variables
+## Part 3: Set up environmental variables in web app repository
 
 - In the root directory, create a new file called `.env`
 
@@ -41,6 +44,7 @@ VITE_GSX_SHEET=[name of sheet in the Google Sheets document, defaults to 'Sheet1
 
 ## Part 4: Run web app on local workstation
 
+- Install all packages:  `yarn install`
 - In the project directory, you can run: `yarn dev`
 - Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 - The page will reload if you make edits.  You will also see any lint errors in the console.
