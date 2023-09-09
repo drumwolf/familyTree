@@ -24,15 +24,17 @@ Here are the basic high-level steps, although you will find more detailed docume
   - C1: `notes`
   - D1: `color` (value should be hex color, i.e. `#FFFFFF`)
     
-### Share the document
+#### Share the document
 
-- Click the "Share" button in the top right corner to change the "General Access" setting to make it viewable to "Anyone with the link"
+- Click the "Share" button in the top right corner
+- In the popup that appears, change the "General Access" setting to make it viewable to "Anyone with the link"
 
-### Create a Google API Key for Google Sheets
+#### Create a Google API Key for Google Sheets
 
-- Create a Google API Key for Google Sheets
-
-
+- Go to the [API Console](https://console.developers.google.com/).
+- In the list underneath "Filters," click on the "Google Sheets" link.  It should take you to a "Google Sheets API" page.
+- On that page, in the left column, click on the "Credentials" link.
+- It will take you to a new "Credentials" page.  On the "Create Credentials" link dropdown, select "API Key."
 
 ## Part 2: Download local web app repository
 
